@@ -29,5 +29,11 @@
     "mocha": "*",
     "should": "*"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.11.2",
+    "express-template": "^0.3.0",
+    "level": "^0.18.0",
+    "template": "^0.8.0"
+  }
 }
