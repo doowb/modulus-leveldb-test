@@ -9,7 +9,6 @@ app.set('port', process.env.PORT || port);
 db.init(function (err) {
   if (err) {
     console.log('Error opening database', err);
-    process.exit(1);
   }
   console.log('database opened successfully');
   var server = app.listen(app.get('port'), function() {
