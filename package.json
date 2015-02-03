@@ -18,11 +18,11 @@
     "type": "MIT",
     "url": "https://github.com/doowb/modulus-leveldb-test/blob/master/LICENSE-MIT"
   },
-  "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "private": true,
+  "main": "./bin/www",
   "scripts": {
     "test": "mocha -R spec",
     "start": "node ./bin/www"
