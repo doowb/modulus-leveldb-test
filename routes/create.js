@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 var db = require('../lib/items');
 
-/* GET home page. */
+/* GET create item. */
 router.get('/', function(req, res, next) {
-  console.log('getting items');
-  db.get(function (err, items) {
+  console.log('creating item');
+  db.create(function (err) {
     if (err) return next(err);
-    res.render('home', { title: 'Leveldb Modulus Test', items: items });
+    res.redirect('/');
   });
 });
 

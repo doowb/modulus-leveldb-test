@@ -1,0 +1,14 @@
+<div id="content">
+  <a href="/create">Add Item</a>
+  <ul>
+  {{#each items}}
+    <li><a href="/click/{{this.id}}">{{this.text}} ({{this.clicks}})</a></li>
+  {{/each}}
+  </ul>
+</div>
+
+<script>
+  setInterval(function () {
+    window.location.reload();
+  }, 1000);
+</script>
